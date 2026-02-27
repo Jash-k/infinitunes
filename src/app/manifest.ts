@@ -1,4 +1,3 @@
-// src/app/manifest.ts
 import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
@@ -9,6 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: '/',
     scope: '/',
     display: 'standalone',
+    orientation: 'portrait-primary',
     theme_color: '#ffffff',
     background_color: '#ffffff',
     icons: [
@@ -16,13 +16,13 @@ export default function manifest(): MetadataRoute.Manifest {
         src: '/icon-192.png',
         type: 'image/png',
         sizes: '192x192',
-        purpose: 'any maskable',
+        purpose: 'maskable',  // ← Fixed
       },
       {
         src: '/icon-512.png',
         type: 'image/png',
         sizes: '512x512',
-        purpose: 'any maskable',
+        purpose: 'any',  // ← Fixed
       },
     ],
   }
