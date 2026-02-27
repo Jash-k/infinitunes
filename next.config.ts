@@ -21,11 +21,11 @@ const config: NextConfig = {
     ],
     unoptimized: !isDocker,
   },
-  experimental: {
-    ppr: true,
-    reactCompiler: isProd ? true : undefined,
-    // ...
-  },
+  // experimental: {
+  //   ppr: true,
+  //   reactCompiler: isProd ? true : undefined,
+  //   // ...
+  // },
   output: isDocker ? "standalone" : undefined,
   /* ... */
 };
