@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "IaSH TuneS",
+  name: "Jash melody ",
   url: "https://infinitunes-lilac.vercel.app/",
   description:
     "A Simple Music Player Web App built using Next.js, shadcn/ui, TailwindCSS, DrizzleORM and more...",
