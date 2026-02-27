@@ -79,6 +79,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  manifest: '/manifest.webmanifest',
   openGraph: {
     type: "website",
     locale: "en_US",
